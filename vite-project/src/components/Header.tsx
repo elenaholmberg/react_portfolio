@@ -1,8 +1,10 @@
 const Header = () => {
   return (
     <header className="header">
-      <p className="headerName">Elena Holmberg</p>
-      <p className="headerTitle">Frontend Developer</p>
+      <div className="headerTop">
+        <p className="headerName">Elena Holmberg</p>
+        <p className="headerTitle">Frontend Developer</p>
+      </div>
       <div className="line"></div>
     </header>
   );
