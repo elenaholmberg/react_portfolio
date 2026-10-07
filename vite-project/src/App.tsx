@@ -13,6 +13,7 @@ function App() {
       <main className="hero">
         <Header />
         <Navigation />
+   
         <h1 className="heroTitle">Creative</h1>
         <h2 className="heroSubtitle">PORTFOLIO</h2>
         <img

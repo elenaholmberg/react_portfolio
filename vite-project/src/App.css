@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column; /* staplar innehållet vertikalt */
   width: 100%;
- 
+
   box-sizing: border-box;
   padding: 0 5%;
 }
@@ -96,3 +96,25 @@ form {
   flex-direction: column;
   align-items: center;
 }
+
+/* SYMBOLS */
+
+/* hamburger menu */
+/* Knappen: ta bort standardutseendet */
+.menuButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menyn är dold som standard */
+.navList {
+  display: none;
+}
+
+/* Visas när isOpen är true */
+.navList.open {
+  display: block;
+}
+
