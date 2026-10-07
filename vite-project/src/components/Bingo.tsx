@@ -2,7 +2,7 @@
 
 const Bingo = () => {
   return (
-    <div>
+    <div className="bingo">
         <h3>PERSONAL TRAIT BINGO</h3>
         <p>Click the personal traits you would like your next team member to have</p>
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 800">
