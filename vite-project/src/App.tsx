@@ -3,6 +3,7 @@ import About from './components/About';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Bingo from './components/Bingo';
+import Tecniques from './components/Tecniques';
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
       <section className="traitsBingo">
         <Bingo />
       </section>
-      <section className="myProjects"></section>
+      <section className="myProjects">
+        <Tecniques />
+      </section>
       <section className="contact"></section>
     </>
   );
