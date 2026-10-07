@@ -1,7 +1,9 @@
-
+import Header from './Header';
 
 const About = () => {
   return (
+    <>
+    <Header />
     <div className="about">
       <h3>WHO I AM</h3>
       <p>
@@ -11,6 +13,7 @@ const About = () => {
         learn new skills and take on new challenges.
       </p>
     </div>
+    </>
   );
 };
 

@@ -23,7 +23,6 @@ function App() {
       </main>
 
       <section className="about">
-        <Header />
         <About />
       </section>
 
