@@ -2,6 +2,7 @@ import './App.css';
 import About from './components/About';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
+import Bingo from './components/Bingo';
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
         <About />
       </section>
 
-      <section className="traitsBingo"></section>
+      <section className="traitsBingo">
+        <Bingo />
+      </section>
       <section className="myProjects"></section>
       <section className="contact"></section>
     </>
