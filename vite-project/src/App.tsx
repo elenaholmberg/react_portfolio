@@ -13,14 +13,15 @@ function App() {
       <main className="hero">
         <Header />
         <Navigation />
-
-        <h1 className="heroTitle">Creative</h1>
-        <h2 className="heroSubtitle">PORTFOLIO</h2>
-        <img
-          src="/src/assets/heroImage.png"
-          alt="hero image"
-          className="heroImage"
-        />
+        <div>
+          <h1 className="heroTitle">Creative</h1>
+          <h2 className="heroSubtitle">PORTFOLIO</h2>
+          <img
+            src="./public/Motiv.png"
+            alt="hero image"
+            className="heroImage"
+          />
+        </div>
       </main>
 
       <section className="about">
