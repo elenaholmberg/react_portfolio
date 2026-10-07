@@ -8,6 +8,13 @@ function App() {
       <main className="hero">
         <Header />
         <Navigation />
+        <h1 className="heroTitle">Creative</h1>
+        <h2 className="heroSubtitle">PORTFOLIO</h2>
+        <img
+          src="/src/assets/heroImage.png"
+          alt="hero image"
+          className="heroImage"
+        />
       </main>
       <section className="about">
         <h1>About</h1>
