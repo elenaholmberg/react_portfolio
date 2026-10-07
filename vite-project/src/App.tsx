@@ -1,4 +1,5 @@
 import './App.css';
+import About from './components/About';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 
@@ -19,16 +20,7 @@ function App() {
 
       <section className="about">
         <Header />
-        <div className="textContainer">
-          <h3>WHO I AM</h3>
-          <p>
-            I am a frontend developer with a passion for creating beautiful and
-            functional web applications. I have experience working with React,
-            TypeScript, and other modern web technologies. I am always eager to
-            learn new skills and take on new challenges.
-          </p>
-        </div>
-        <img src="/src/assets/aboutImage.png" alt="about image"></img>
+        <About />
       </section>
 
       <section className="traitsBingo"></section>
