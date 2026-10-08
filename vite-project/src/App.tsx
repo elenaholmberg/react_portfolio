@@ -6,22 +6,17 @@ import Bingo from './components/Bingo';
 import Tecniques from './components/Tecniques';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <>
-      <main className="hero">
+      <main className="main">
         <Header />
         <Navigation />
-        <div>
-          <h1 className="heroTitle">Creative</h1>
-          <h2 className="heroSubtitle">PORTFOLIO</h2>
-          <img
-            src="./public/Motiv.png"
-            alt="hero image"
-            className="heroImage"
-          />
-        </div>
+        <Hero/>
+       
+      
       </main>
 
       <section className="about">

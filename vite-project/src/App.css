@@ -1,6 +1,6 @@
 /* sections */
 
-.hero,
+.main,
 .traitsBingo,
 .contact {
   background-color: #484747;
@@ -54,7 +54,7 @@ ul {
 
 /* HERO */
 
-.hero {
+.main {
   position: relative;
   height: 910px;
 }
@@ -67,7 +67,7 @@ ul {
   z-index: 1; /* placera bilden bakom innehållet */
 }
 
-.hero .header .line {
+.main .header .line {
   display: none;
 }
 
@@ -82,14 +82,13 @@ ul {
 }
 
 .about h3,
-.about p{
-justify-content: left;
+.about p {
+  justify-content: left;
   display: flex;
   margin-bottom: 50px;
   margin-left: 5%;
   width: 40%;
 }
-
 
 /* filter */
 
