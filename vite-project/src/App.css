@@ -17,25 +17,25 @@
 /* header */
 
 .header {
+  color: #908c94;
   display: flex;
-  flex-direction: column; /* staplar innehållet vertikalt */
+  flex-direction: column;
   width: 100%;
-
   box-sizing: border-box;
   padding: 0 5%;
 }
 
 .headerTop {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* namn vänster, titel höger */
+  justify-content: space-between;
 }
 
 .line {
   height: 1px;
-  background-color: white;
+  background-color: #484747;
   width: 100%;
 }
 
@@ -52,42 +52,53 @@ ul {
   list-style-type: none;
 }
 
-/* HERO */
+/* MAIN */
 
 .main {
   position: relative;
-  height: 910px;
-}
-
-.heroImage {
-  object-fit: cover;
-  position: absolute;
-  top: 280px;
-  transform: translateX(-50%);
-  z-index: 1; /* placera bilden bakom innehållet */
+  height: 700px;
 }
 
 .main .header .line {
   display: none;
 }
 
+/* HERO */
+.hero {
+  margin-top: 200px;
+}
 /* ABOUT */
-.about {
-  height: 700px;
+
+.aboutConatiner {
+  display: flex;
+  flex-direction: row;
+}
+
+.abotText {
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+
+.aboutImage {
+  width: 40%;
+
+
 }
 
 .about .header .line {
-  background-color: #484747;
+  background-color: lightgray;
   margin-bottom: 80px;
 }
 
 .about h3,
-.about p {
+.about h4 {
   justify-content: left;
+  text-align: left;
   display: flex;
   margin-bottom: 50px;
   margin-left: 5%;
-  width: 40%;
 }
 
 /* filter */
@@ -139,11 +150,11 @@ form {
 /* SYMBOLS */
 
 /* hamburger menu */
-/* Knappen: ta bort standardutseendet */
+
 .menuButton {
   background: none;
   border: none;
-  color: white;
+  color: #e8e6dd;
   cursor: pointer;
 }
 
@@ -155,8 +166,16 @@ form {
 /* Visas när isOpen är true */
 .navList.open {
   display: block;
+  position: absolute;
+  top: 100px;
+  right: 5%;
 }
 
+a {
+  text-decoration: none;
+  color: #e8e6dd;
+  text-transform: uppercase;
+}
 /* TEXT STYLES */
 .heroTitle {
   font-family: 'Mea Culpa', cursive;
@@ -176,6 +195,7 @@ form {
   color: #e8e6dd;
 }
 
+h4,
 p {
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 400;
