@@ -25,7 +25,7 @@ const Projects = () => {
           </a>
         </div>
         <div className="projectCard">
-          <img src="./Calippo.jpg" alt="" />
+          <img src="./public/Calippo.jpg" alt="" />
           <a href="https://example.com">Project 10</a>
         </div>
 
