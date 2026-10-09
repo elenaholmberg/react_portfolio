@@ -15,7 +15,7 @@ const About = () => {
           </h4>
         </span>
 
-        <img src="./public/Motiv2.png" alt="Motiv" className="aboutImage" />
+        <img src="./Motiv2.png" alt="Motiv" className="aboutImage" />
       </div>
     </>
   );
