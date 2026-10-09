@@ -57,6 +57,7 @@ ul {
   display: flex;
   justify-content: right;
   color: #e8e6dd;
+  background-color: #484747;
   border: none;
   cursor: pointer;
   margin-right: 2%;

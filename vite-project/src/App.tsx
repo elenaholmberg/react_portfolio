@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import About from './components/About';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
@@ -10,16 +11,17 @@ import Hero from './components/Hero';
 import LanguageBtn from './components/LanguageBtn';
 
 function App() {
+  const [language, setLanguage] = useState<'en' | 'sv'>('en');
+
   return (
     <>
       <main className="main">
         <Header />
         <div className="btnContainer">
-        <LanguageBtn />
-        <Navigation />
+          <LanguageBtn language={language} setLanguage={setLanguage} />
+          <Navigation />
         </div>
         <Hero />
-        
       </main>
 
       <section className="about">
