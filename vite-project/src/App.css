@@ -4,7 +4,7 @@
 .traitsBingo,
 .contact {
   background-color: #484747;
-  height: 100vh;
+
   width: 100%;
 }
 
@@ -179,9 +179,6 @@ ul {
 .contactFlexer {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   display: grid;
- 
-
- 
 }
 .leftContactColumn {
   display: flex;
@@ -218,19 +215,42 @@ form {
   justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
-  height:200px;
+  height: 600px;
 }
 
 label {
   text-align: left;
   color: #e8e6dd;
   margin-bottom: 5px;
-    font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
 }
 
+input {
+  height: 40px;
+  border-radius: 10px;
+}
+
+.message {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.submitButton {
+  background-color: #e8e6dd;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 50%;
+}
 /* SYMBOLS */
 
 /* hamburger menu */
