@@ -52,6 +52,25 @@ ul {
   list-style-type: none;
 }
 
+/*language*/
+.languageBtn {
+  display: flex;
+  justify-content: right;
+  color: #e8e6dd;
+  border: none;
+  cursor: pointer;
+  margin-right: 2%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+} 
 /* MAIN */
 
 .main {
@@ -83,8 +102,6 @@ ul {
 
 .aboutImage {
   width: 40%;
-
-
 }
 
 .about .header .line {
@@ -115,15 +132,20 @@ ul {
 .projectCard {
   border: 1px solid black;
   padding: 10px;
-  margin: 10px;
+  margin: 30px;
 }
 
 .projects {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+  grid-gap: 20px;
   justify-content: space-evenly;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.projectText {
+  grid-column: 1 / -1;
 }
 
 /* contact */
