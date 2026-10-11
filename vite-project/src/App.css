@@ -131,7 +131,6 @@ ul {
   min-height: 80vh;
   overflow: hidden; /* döljer cirklar som flyter utanför */
   margin-top: 50px;
-
 }
 
 .circle {
@@ -141,9 +140,9 @@ ul {
   justify-content: center;
   border-radius: 50%; /* det här gör en fyrkant till en cirkel */
   background: #e8e6dd;
- font-family: 'Nanum Gothic', sans-serif;
- text-transform: uppercase;
- font-style:oblique;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform: uppercase;
+  font-style: oblique;
   color: #484747;
   font-weight: 400;
   animation-name: float;
