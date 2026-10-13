@@ -5,11 +5,11 @@ men beskriv dem i README-filen
 ● Struktur och komponenter
 [] Dela upp appen i rimliga, återanvändbara komponenter med en tydlig struktur
 [] Använd props för att skicka data
-[] Spara projektdatan separat (t.ex. data/projects.ts) och rendera den med
+[x] Spara projektdatan separat (t.ex. data/projects.ts) och rendera den med
 .map() och korrekta key
 [x] Minst 6 projekt visas som boxar/kort (riktiga eller fiktiva, se ovan)
 ● Innehåll
-[]Portfolion innehåller minst sektionerna Hem, Om mig, Projekt och Kontakt
+[x]Portfolion innehåller minst sektionerna Hem, Om mig, Projekt och Kontakt
 []En navigation som länkar till sektionerna (t.ex. #projekt)
 []Kontakt-sektionen visar era kontaktuppgifter, t.ex. e-post, Github och LinkedIn
 (kontaktformuläret är ett VG-krav)
