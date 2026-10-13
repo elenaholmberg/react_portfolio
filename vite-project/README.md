@@ -11,7 +11,7 @@ men beskriv dem i README-filen
 ● Innehåll
 [x]Portfolion innehåller minst sektionerna Hem, Om mig, Projekt och Kontakt
 []En navigation som länkar till sektionerna (t.ex. #projekt)
-[]Kontakt-sektionen visar era kontaktuppgifter, t.ex. e-post, Github och LinkedIn
+[x]Kontakt-sektionen visar era kontaktuppgifter, t.ex. e-post, Github och LinkedIn
 (kontaktformuläret är ett VG-krav)
 ● State och interaktivitet
 ○ Minst två meningsfulla användningar av useState, varav en skall filtrera

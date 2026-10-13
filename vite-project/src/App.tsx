@@ -24,18 +24,17 @@ function App() {
         <Hero />
       </main>
 
-      <section className="about">
+      <section id="about" className="about">
         <About />
       </section>
 
       <section className="traitsBingo">
         <Bingo />
       </section>
-      <section className="myProjects">
-       
+      <section id="projects" className="myProjects">
         <Projects />
       </section>
-      <section className="contact">
+      <section id="contact" className="contact">
         <Contact />
       </section>
     </>
