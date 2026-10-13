@@ -1,4 +1,4 @@
-
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -35,31 +35,7 @@ const Contact = () => {
             Send
           </button>
         </form>
-
-        <ul className="contactInfo">
-          <li>Phone: +46 70 123 45 67</li>
-          <li>Email: example@example.com</li>
-          <li>
-            Github:{' '}
-            <a
-              href="https://github.com/example"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github.com/example
-            </a>
-          </li>
-          <li>
-            LinkedIn:{' '}
-            <a
-              href="https://www.linkedin.com/in/example"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin.com/in/example
-            </a>
-          </li>
-        </ul>
+        <Footer />
       </div>
     </>
   );
