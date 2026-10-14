@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 const circles = [
   {
     text: 'Problem solving',
@@ -58,12 +60,23 @@ const circles = [
 ];
 
 const FloatingCircles = () => {
+  const [selectedCircles, setSelectedCircles] = useState<string[]>([]);
+
+  const toggleCircle = (text: string) => {
+    setSelectedCircles((current) =>
+      current.includes(text)
+        ? current.filter((circle) => circle !== text)
+        : [...current, text],
+    );
+  };
+
   return (
     <div className="circleContainer">
       {circles.map((circle) => (
         <div
           key={circle.text}
-          className="circle"
+          className={`circle ${selectedCircles.includes(circle.text) ? 'selected' : ''}`}
+          onClick={() => toggleCircle(circle.text)}
           style={{
             width: circle.size,
             height: circle.size,
@@ -76,6 +89,11 @@ const FloatingCircles = () => {
           {circle.text}
         </div>
       ))}
+      {selectedCircles.length >= 4 && (
+        <div className="circleMessage" role="status">
+          Great choices! You selected four traits.
+        </div>
+      )}
     </div>
   );
 };

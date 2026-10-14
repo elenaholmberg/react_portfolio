@@ -152,6 +152,25 @@ ul {
   animation-name: float;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+.circle.selected {
+  background: lightblue;
+}
+
+.circleMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  padding: 16px 24px;
+  background: #e8e6dd;
+  border: 2px solid lightblue;
+  color: #484747;
+  font-weight: 700;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes float {
