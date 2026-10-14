@@ -452,6 +452,14 @@ input {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
 }
 
+body {
+  margin: 0;
+  background-color: lightblue;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* navigation */
 .navigation {
   display: flex;
