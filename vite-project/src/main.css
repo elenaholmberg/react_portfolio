@@ -12,17 +12,14 @@
   margin-top: 2%;
 }
 
-.hero {
-  margin-top: 230px;
-}
-
 .heroTitle {
   font-family: "Mea Culpa", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 200px;
-  margin-top: 30px;
   color: #e8e6dd;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .heroSubtitle {
@@ -30,6 +27,10 @@
   font-weight: 400;
   font-style: normal;
   font-size: 120px;
-  margin-top: 50px;
   color: #e8e6dd;
+  margin-top: 0;
+}
+
+.hero {
+  margin-top: 100px;
 }/*# sourceMappingURL=main.css.map */

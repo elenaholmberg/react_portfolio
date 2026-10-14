@@ -99,19 +99,41 @@ p {
 
 @media (max-width: 1288px) {
   .heroTitle {
-    font-size: 100px;
+    font-size: 150px;
   }
 
   .heroSubtitle {
-    font-size: 60px;
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 110px;
+  }
+  .heroSubtitle {
+    font-size: 75px;
   }
 }
 
 @media (max-width: 768px) {
+  .main {
+    height: 100vh;
+  }
   .heroTitle {
-    font-size: 80px;
+    font-size: 90px;
   }
   .heroSubtitle {
-    font-size: 40px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 70px;
+  }
+  .heroSubtitle {
+    font-size: 30px;
+    white-space: nowrap;
   }
 }
