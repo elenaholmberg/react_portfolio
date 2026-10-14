@@ -10,11 +10,12 @@
 .traitsBingo {
   height: 800px;
 }
-.about,
-.myProjects {
+.about, .myProjects{
   background-color: #e8e6dd;
   width: 100%;
+  
 }
+
 
 /* header */
 
@@ -249,11 +250,9 @@ ul {
 .projectCard,
 .projectCardRow2 {
   height: 300px;
+   margin-bottom: 60px;
 }
 
-.projectCardRow2 {
-  margin-bottom: 60px;
-}
 
 .projectVisual {
   position: relative;

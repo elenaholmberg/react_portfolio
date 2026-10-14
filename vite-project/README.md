@@ -14,18 +14,18 @@ men beskriv dem i README-filen
 [x]Kontakt-sektionen visar era kontaktuppgifter, t.ex. e-post, Github och LinkedIn
 (kontaktformuläret är ett VG-krav)
 ● State och interaktivitet
-○ Minst två meningsfulla användningar av useState, varav en skall filtrera
+[x] Minst två meningsfulla användningar av useState, varav en skall filtrera
 projektlistan
 ■ Filtret väljer en teknik-tagg i taget, plus ett val som visar alla projekt
 (t.ex. "Alla")
 ■ Andra exempel: mobilmeny, ljust/mörkt tema, expanderbar "läs mer"
-○ Den filtrerade listan skall räknas fram vid rendering, inte sparas i ett eget
+[x]Den filtrerade listan skall räknas fram vid rendering, inte sparas i ett eget
 state
 ● Styling och animation
 ○ En enhetlig visuell profil (färger, typografi, avstånd) med CSS Modules,
 Tailwind eller välstrukturerad CSS
 ○ Helt responsiv från ca 360px upp till desktop-bredd
-○ Minst en animation eller transition som förbättrar upplevelsen (CSS eller
+[x] Minst en animation eller transition som förbättrar upplevelsen (CSS eller
 Motion)
 ● Kvalitet och leverans
 ○ Inga fel eller React-varningar i konsolen

@@ -1,9 +1,9 @@
-import Header from './Header';
+
 
 const About = () => {
   return (
     <>
-      <Header />
+    
       <div className="aboutConatiner">
         <span className="aboutText">
           <h3>WHO I AM</h3>

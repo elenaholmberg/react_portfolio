@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import About from './components/About';
-import Header from './components/Header';
+
 import Navigation from './components/Navigation';
 import Bingo from './components/Bingo';
 
@@ -16,7 +16,6 @@ function App() {
   return (
     <>
       <main className="main">
-        <Header />
         <div className="btnContainer">
           <LanguageBtn language={language} setLanguage={setLanguage} />
           <Navigation />
