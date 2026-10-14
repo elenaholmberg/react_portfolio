@@ -1,48 +1,27 @@
-/* sections */
+$dark: #484747;
+$light: #e8e6dd;
+$accent: lightblue;
 
-.main,
+/* sections */
+.main {
+  background-color: $dark;
+  width: 100%;
+  position: relative;
+  height: 90vh;
+}
+
 .traitsBingo,
 .contact {
-  background-color: #484747;
+  background-color: $dark;
   width: 100%;
 }
 
 .traitsBingo {
   height: 800px;
 }
-.about, .myProjects{
-  background-color: #e8e6dd;
-  width: 100%;
-  
-}
-
-
-/* header */
-
-.header {
-  color: #908c94;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 5%;
-}
-
-.headerTop {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.contact .header {
-  height: 100px;
-}
-
-.line {
-  height: 1px;
-  background-color: #484747;
+.about,
+.myProjects {
+  background-color: $light;
   width: 100%;
 }
 
@@ -51,8 +30,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
   margin-right: 5%;
+  margin-top: 2.5%;
 }
 
 ul {
@@ -68,6 +47,7 @@ ul {
   border: none;
   cursor: pointer;
   margin-right: 2%;
+  margin-top: 3%;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -77,21 +57,19 @@ ul {
   flex-direction: row;
   justify-content: right;
 }
-/* MAIN */
 
-.main {
-  position: relative;
-  height: 700px;
-}
-
-.main .header .line {
-  display: none;
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: lightblue;
+  margin-top: 2%;
 }
 
 /* HERO */
 .hero {
-  margin-top: 200px;
+  margin-top: 230px;
 }
+
 /* ABOUT */
 
 .aboutConatiner {
@@ -99,7 +77,7 @@ ul {
   flex-direction: row;
 }
 
-.abotText {
+.aboutText {
   width: 50%;
   margin-left: 5%;
   margin-right: 5%;
@@ -108,11 +86,6 @@ ul {
 
 .aboutImage {
   width: 40%;
-}
-
-.about .header .line {
-  background-color: lightgray;
-  margin-bottom: 80px;
 }
 
 .about h3,
@@ -250,9 +223,8 @@ ul {
 .projectCard,
 .projectCardRow2 {
   height: 300px;
-   margin-bottom: 60px;
+  margin-bottom: 60px;
 }
-
 
 .projectVisual {
   position: relative;
@@ -275,7 +247,7 @@ ul {
   height: 100%;
   overflow: hidden;
   border-radius: 20px;
-  background-color: rgba(72, 71, 71);
+  background-color: rgba($dark, 1);
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -289,12 +261,14 @@ ul {
   transition: opacity 0.2s ease;
 }
 
-.projectCardWhite.isHovered .projectCardWhiteImage {
-  opacity: 1;
-}
+.projectCardWhite.isHovered {
+  .projectCardWhiteImage {
+    opacity: 1;
+  }
 
-.projectCardWhite.isHovered .projectLink {
-  opacity: 0;
+  .projectLink {
+    opacity: 0;
+  }
 }
 
 .projectCardWhite a,
@@ -371,14 +345,8 @@ ul {
   margin-bottom: 50px;
   margin-left: 5%;
   color: #e8e6dd;
-  line-height: 1.2;
   position: absolute;
   z-index: 3;
-}
-
-.contact .header .line {
-  background-color: #e8e6dd;
-  margin-bottom: 80px;
 }
 
 .contact img {
@@ -412,14 +380,12 @@ ul {
 .contactInfo {
   display: flex;
   justify-content: space-between;
-
   background-color: #e8e6dd;
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
   padding: 0;
-
   text-align: left;
 }
 

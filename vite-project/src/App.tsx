@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { useState } from 'react';
 import About from './components/About';
 
@@ -20,6 +20,7 @@ function App() {
           <LanguageBtn language={language} setLanguage={setLanguage} />
           <Navigation />
         </div>
+        <div className="line" />
         <Hero />
       </main>
 
