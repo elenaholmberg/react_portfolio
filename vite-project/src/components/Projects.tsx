@@ -1,19 +1,7 @@
 import Tecniques from './Tecniques';
-import { useState } from 'react';
 import { projects } from '../data/projects';
 
 const Projects = () => {
-  const [whiteProjectCards, setWhiteProjectCards] = useState<number[]>(
-    projects.map((project) => project.id),
-  );
-
-  const toggleProjectCard = (projectId: number) => {
-    setWhiteProjectCards((currentCards) =>
-      currentCards.includes(projectId)
-        ? currentCards.filter((id) => id !== projectId)
-        : [...currentCards, projectId],
-    );
-  };
   return (
     <>
       <Tecniques />
@@ -32,34 +20,19 @@ const Projects = () => {
           >
             <div
               className="projectVisual"
-              role="button"
-              tabIndex={0}
-              aria-label={`Show ${project.name} image`}
-              onClick={() => toggleProjectCard(project.id)}
-              onKeyDown={(event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                  event.preventDefault();
-                  toggleProjectCard(project.id);
-                }
-              }}
             >
-              {whiteProjectCards.includes(project.id) ? (
-                <div className="projectCardWhite">
-                  <img
-                    src={project.image}
-                    alt={`${project.name} project`}
-                    className="projectCardWhiteImage"
-                  />
-                  <a className="projectLink" href={project.url}>
-                    {project.name}
-                  </a>
-                </div>
-              ) : (
-                <div className="projectCardImage">
-                  <img src={project.image} alt={`${project.name} project`} />
-                  <a href={project.url}>{project.name}</a>
-                </div>
-              )}
+              <a className="projectCardWhite" href={project.url}>
+                <img
+                  src={project.image}
+                  alt={`${project.name} project`}
+                  className="projectCardWhiteImage"
+                />
+                <span className="projectLink">
+                  {project.name.trim().split(/\s+/).map((word, index) => (
+                    <span key={`${word}-${index}`}>{word}</span>
+                  ))}
+                </span>
+              </a>
             </div>
           </div>
         ))}
