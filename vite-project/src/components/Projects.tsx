@@ -1,7 +1,17 @@
 import Tecniques from './Tecniques';
+import { useEffect, useState } from 'react';
 import { projects } from '../data/projects';
 
 const Projects = () => {
+  const [hoveredProjectId, setHoveredProjectId] = useState<number | null>(null);
+
+  useEffect(() => {
+    const resetCards = () => setHoveredProjectId(null);
+
+    window.addEventListener('pageshow', resetCards);
+    return () => window.removeEventListener('pageshow', resetCards);
+  }, []);
+
   return (
     <>
       <Tecniques />
@@ -18,19 +28,25 @@ const Projects = () => {
             className={project.layoutClass ?? 'projectCard'}
             key={project.id}
           >
-            <div
-              className="projectVisual"
-            >
-              <a className="projectCardWhite" href={project.url}>
+            <div className="projectVisual">
+              <a
+                className={`projectCardWhite ${hoveredProjectId === project.id ? 'isHovered' : ''}`}
+                href={project.url}
+                onMouseEnter={() => setHoveredProjectId(project.id)}
+                onMouseLeave={() => setHoveredProjectId(null)}
+              >
                 <img
                   src={project.image}
                   alt={`${project.name} project`}
                   className="projectCardWhiteImage"
                 />
                 <span className="projectLink">
-                  {project.name.trim().split(/\s+/).map((word, index) => (
-                    <span key={`${word}-${index}`}>{word}</span>
-                  ))}
+                  {project.name
+                    .trim()
+                    .split(/\s+/)
+                    .map((word, index) => (
+                      <span key={`${word}-${index}`}>{word}</span>
+                    ))}
                 </span>
               </a>
             </div>

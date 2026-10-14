@@ -269,12 +269,11 @@ ul {
   transition: opacity 0.2s ease;
 }
 
-.projectCardWhite:hover .projectCardWhiteImage,
-.projectCardWhite:focus-within .projectCardWhiteImage {
+.projectCardWhite.isHovered .projectCardWhiteImage {
   opacity: 1;
 }
 
-.projectCardWhite:hover .projectLink {
+.projectCardWhite.isHovered .projectLink {
   opacity: 0;
 }
 
