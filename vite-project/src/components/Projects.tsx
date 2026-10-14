@@ -3,7 +3,15 @@ import { useEffect, useState } from 'react';
 import { projects } from '../data/projects';
 
 const Projects = () => {
+  const [selectedTechnique, setSelectedTechnique] = useState('Alla');
   const [hoveredProjectId, setHoveredProjectId] = useState<number | null>(null);
+
+  const filteredProjects =
+    selectedTechnique === 'Alla'
+      ? projects
+      : projects.filter((project) =>
+          project.technologies.includes(selectedTechnique),
+        );
 
   useEffect(() => {
     const resetCards = () => setHoveredProjectId(null);
@@ -14,7 +22,10 @@ const Projects = () => {
 
   return (
     <>
-      <Tecniques />
+      <Tecniques
+        selectedTechnique={selectedTechnique}
+        onSelectTechnique={setSelectedTechnique}
+      />
       <div className="projects">
         <h3>MY PROJECTS</h3>
         <p className="projectText">
@@ -23,7 +34,7 @@ const Projects = () => {
           and user-friendly web applications.
         </p>
 
-        {projects.map((project) => (
+        {filteredProjects.map((project) => (
           <div
             className={project.layoutClass ?? 'projectCard'}
             key={project.id}

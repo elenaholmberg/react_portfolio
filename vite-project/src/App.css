@@ -213,11 +213,29 @@ ul {
 
 .tecnicalSkills {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   flex-direction: row;
   justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 50px;
+}
+
+.tecnicalSkills button {
+  padding: 8px 12px;
+  border: 1px solid #484747;
+  background: transparent;
+  color: #484747;
+  cursor: pointer;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform: uppercase;
+}
+
+.tecnicalSkills button.active,
+.tecnicalSkills button:hover {
+  background: #484747;
+  color: #e8e6dd;
 }
 
 .filterTitle {
