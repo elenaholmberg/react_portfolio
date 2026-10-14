@@ -1,0 +1,111 @@
+$dark: #484747
+$light: #e8e6dd
+
+.contact
+  background-color: $dark
+  width: 100%
+
+.contactFlexer
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  display: grid
+  margin-top: 50px
+
+.leftContactColumn
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.contact h3
+  justify-content: left
+  text-align: left
+  margin-bottom: 50px
+  margin-left: 5%
+  color: $light
+  position: absolute
+  z-index: 3
+
+.contact img
+  position: relative
+  z-index: 2
+  width: 400px
+  height: 100%
+  object-fit: cover
+  margin-left: 0px
+  clip-path: inset(0 0 70px 0)
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 150px), transparent calc(100% - 70px)), radial-gradient(ellipse 120px 100px at 100% 100%, transparent 0, black 100%)
+  -webkit-mask-composite: source-in
+  mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 150px), transparent calc(100% - 70px)), radial-gradient(ellipse 120px 100px at 100% 100%, transparent 0, black 100%)
+  mask-composite: intersect
+
+.contactInfo
+  display: flex
+  justify-content: space-between
+  background-color: $light
+  font-family: 'Nanum Gothic', sans-serif
+  font-weight: 400
+  font-style: normal
+  text-transform: uppercase
+  padding: 0
+  text-align: left
+  grid-column: 1 / -1
+
+.ulRight,
+.ulLeft
+  list-style-type: circle
+  font-family: 'Nanum Gothic', sans-serif
+  font-weight: 400
+  font-style: normal
+  text-transform: uppercase
+  margin-right: 5%
+
+form
+  grid-column: 2 / -1
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-left: 20%
+  margin-right: 5%
+  height: 600px
+
+label
+  text-align: left
+  color: $light
+  margin-bottom: 5px
+  font-family: 'Nanum Gothic', sans-serif
+  font-weight: 400
+  font-style: normal
+  text-transform: uppercase
+
+input
+  height: 40px
+  border-radius: 10px
+
+.message
+  height: 300px
+  border-radius: 10px
+
+.submitButton
+  background-color: $light
+  border: none
+  padding: 10px 20px
+  cursor: pointer
+  text-transform: uppercase
+  font-family: 'Nanum Gothic', sans-serif
+  font-weight: 400
+  font-style: normal
+  margin-top: 20px
+  border-radius: 10px
+  width: 50%
+
+.contactSymbol
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  margin-top: 40px
+  color: $dark
+  text-decoration: none
+
+.contactSymbol .material-symbols-outlined
+  font-size: 64px
+  font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24
