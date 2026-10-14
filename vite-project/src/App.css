@@ -132,10 +132,9 @@ ul {
 /*circles*/
 .circleContainer {
   position: relative;
-  min-height: 80vh;
+  min-height: 70vh;
   overflow: clip;
   contain: paint;
-  margin-top: 50px;
 }
 
 .circle {
