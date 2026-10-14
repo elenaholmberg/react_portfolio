@@ -1,0 +1,98 @@
+.traitsBingo {
+  background-color: #484747;
+  width: 100%;
+  height: 800px;
+}
+
+.bingo p {
+  color: #e8e6dd;
+}
+
+.bingo h3 {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-top: 50px;
+  color: #e8e6dd;
+}
+
+.circleContainer {
+  position: relative;
+  min-height: 70vh;
+  overflow: clip;
+  contain: paint;
+}
+
+.circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e8e6dd;
+  font-family: "Nanum Gothic", sans-serif;
+  text-transform: uppercase;
+  font-style: oblique;
+  color: #484747;
+  font-weight: 400;
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+.circle.selected {
+  background: lightblue;
+}
+
+.circleContainer.messageVisible .circle {
+  display: none;
+}
+
+.circleMessage {
+  width: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #e8e6dd;
+  border: 2px solid lightblue;
+  color: #484747;
+  font-weight: 700;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+  line-height: 2;
+  transform: translate(-50%, -50%);
+}
+
+.circleMessage p {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #484747;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(40px, -60px);
+  }
+  50% {
+    transform: translate(-30px, -100px);
+  }
+  75% {
+    transform: translate(-60px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=bingo.css.map */

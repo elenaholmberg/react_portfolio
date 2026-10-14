@@ -1,0 +1,153 @@
+.myProjects {
+  background-color: #e8e6dd;
+  width: 100%;
+}
+
+.tecnicalSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+
+.tecnicalSkills button {
+  padding: 8px 12px;
+  border: 1px solid #484747;
+  background: transparent;
+  color: #484747;
+  cursor: pointer;
+  font-family: "Nanum Gothic", sans-serif;
+  text-transform: uppercase;
+}
+
+.tecnicalSkills button.active,
+.tecnicalSkills button:hover {
+  background: #484747;
+  color: #e8e6dd;
+}
+
+.filterTitle {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.projectCard,
+.projectCardRow2 {
+  height: 300px;
+  margin-bottom: 60px;
+}
+
+.projectVisual {
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.projectCard img,
+.projectCardRow2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projectCardWhite {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #484747;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.projectCardWhiteImage {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 0.2s ease;
+}
+
+.projectCardWhite.isHovered .projectCardWhiteImage {
+  opacity: 1;
+}
+.projectCardWhite.isHovered .projectLink {
+  opacity: 0;
+}
+
+.projectCardWhite a,
+.projectCardImage a,
+.projectLink {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.projectCardImage {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.projectCardImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+  grid-gap: 20px;
+  justify-content: space-evenly;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+.projectText {
+  grid-column: 1/-1;
+  margin-bottom: 50px;
+}
+
+.projects h3 {
+  justify-content: left;
+  text-align: left;
+  grid-column: 1/-2;
+  margin-bottom: 0px;
+}
+
+.projects h3 {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-top: 50px;
+  color: #484747;
+}/*# sourceMappingURL=projects.css.map */
