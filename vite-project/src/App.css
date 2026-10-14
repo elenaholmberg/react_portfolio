@@ -131,9 +131,9 @@ ul {
 
 /*circles*/
 .circleContainer {
-  position: relative; /* cirklarna placeras i förhållande till den här */
+  position: relative;
   min-height: 80vh;
-  overflow: hidden; /* döljer cirklar som flyter utanför */
+  overflow: hidden;
   margin-top: 50px;
 }
 
@@ -142,7 +142,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%; /* det här gör en fyrkant till en cirkel */
+  border-radius: 50%;
   background: #e8e6dd;
   font-family: 'Nanum Gothic', sans-serif;
   text-transform: uppercase;
