@@ -9,11 +9,9 @@ const Projects = () => {
 
   const toggleProjectCard = (projectId: number) => {
     setWhiteProjectCards((currentCards) =>
-      currentCards.includes(projectId) ? (
-        currentCards.filter((id) => id !== projectId)
-      ) : (
-        [...currentCards, projectId]
-      ),
+      currentCards.includes(projectId)
+        ? currentCards.filter((id) => id !== projectId)
+        : [...currentCards, projectId],
     );
   };
   return (
@@ -47,7 +45,14 @@ const Projects = () => {
             >
               {whiteProjectCards.includes(project.id) ? (
                 <div className="projectCardWhite">
-                  <a href={project.url}>{project.name}</a>
+                  <img
+                    src={project.image}
+                    alt={`${project.name} project`}
+                    className="projectCardWhiteImage"
+                  />
+                  <a className="projectLink" href={project.url}>
+                    {project.name}
+                  </a>
                 </div>
               ) : (
                 <div className="projectCardImage">

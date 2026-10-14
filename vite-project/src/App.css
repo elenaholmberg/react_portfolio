@@ -233,16 +233,36 @@ ul {
 }
 
 .projectCardWhite {
+  position: relative;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: rgba(72, 71, 71);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.projectCardWhiteImage {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 0.2s ease;
+}
+
+.projectCardWhite:hover .projectCardWhiteImage,
+.projectCardWhite:focus-within .projectCardWhiteImage {
+  opacity: 1;
+}
+
+.projectCardWhite:hover .projectLink {
+  opacity: 0;
+}
+
 .projectCardWhite a,
 .projectCardImage a {
+  position: relative;
+  z-index: 1;
   color: #484747;
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 400;
@@ -292,6 +312,17 @@ ul {
   text-align: left;
   grid-column: 1/-2;
   margin-bottom: 0px;
+}
+
+.projectLink {
+  text-decoration: none;
+  background-color: #e8e6dd;
+  color: #484747;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 /* contact */
