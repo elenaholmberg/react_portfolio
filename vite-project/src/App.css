@@ -133,7 +133,8 @@ ul {
 .circleContainer {
   position: relative;
   min-height: 80vh;
-  overflow: hidden;
+  overflow: clip;
+  contain: paint;
   margin-top: 50px;
 }
 
