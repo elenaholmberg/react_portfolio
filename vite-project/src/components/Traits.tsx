@@ -71,7 +71,9 @@ const FloatingCircles = () => {
   };
 
   return (
-    <div className="circleContainer">
+    <div
+      className={`circleContainer ${selectedCircles.length >= 4 ? 'messageVisible' : ''}`}
+    >
       {circles.map((circle) => (
         <div
           key={circle.text}
@@ -91,7 +93,21 @@ const FloatingCircles = () => {
       ))}
       {selectedCircles.length >= 4 && (
         <div className="circleMessage" role="status">
-          Great choices! You selected four traits.
+          <p>
+            Great choices! <br></br>You found your perfect match! <br /> Now,
+            let's get in touch before someone else does!
+          </p>
+
+          <a
+            href="#contact"
+            className="contactSymbol"
+            aria-label="Go to contact section"
+            title="Go to contact section"
+          >
+            <span className="material-symbols-outlined" aria-hidden="true">
+              chat
+            </span>
+          </a>
         </div>
       )}
     </div>
