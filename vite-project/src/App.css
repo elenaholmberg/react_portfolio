@@ -199,7 +199,7 @@
 
 .aboutImage {
   top: -350px;
-  width: 100%;
+  width: 80%;
 }
 
 .traitsBingo {
@@ -666,6 +666,7 @@ h4 {
 
 html {
   background-color: lightblue;
+  width: 100%;
 }
 
 body {
@@ -673,8 +674,17 @@ body {
   background-color: lightblue;
   width: 100%;
   max-width: none;
+  box-sizing: border-box;
   text-align: center;
   overflow-x: hidden;
+}
+
+#root,
+main,
+section {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
