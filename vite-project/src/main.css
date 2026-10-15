@@ -2,7 +2,7 @@
   background-color: #484747;
   width: 100%;
   position: relative;
-  height: clamp(50vh, 90vh, 900px);
+  height: clamp(100vh, 90vh, 900px);
 }
 
 .line {
@@ -16,9 +16,9 @@
   font-family: "Mea Culpa", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 200px;
+  font-size: 150px;
   color: #e8e6dd;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
@@ -28,11 +28,7 @@
   font-style: normal;
   font-size: 120px;
   color: #e8e6dd;
-  margin-top: 0;
-}
-
-.hero {
-  margin-top: 100px;
+  margin: 0;
 }
 
 @media (max-width: 1024px) {
@@ -51,18 +47,18 @@
 }
 @media (max-width: 1024px) {
   .main {
-    height: 90vh;
+    height: 80vh;
   }
   .heroTitle {
-    font-size: 80px;
+    font-size: 100px;
   }
   .heroSubtitle {
-    font-size: 50px;
+    font-size: 70px;
   }
 }
 @media (max-width: 768px) {
   .main {
-    height: 60vh;
+    height: 70vh;
   }
   .hero {
     margin-top: 10px;

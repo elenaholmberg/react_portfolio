@@ -5,12 +5,23 @@
 @use './contact';
 @use './navigation';
 
+html {
+  background-color: lightblue;
+}
+
 body {
   margin: 0;
   background-color: lightblue;
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (min-width: 1441px) {
+  body {
+    width: 100%;
+    max-width: 1152px;
+  }
 }
 
 section {
