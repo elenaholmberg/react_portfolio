@@ -58,36 +58,24 @@
 }
 @media (max-width: 768px) {
   .main {
-    height: 70vh;
-  }
-  .hero {
-    margin-top: 10px;
-  }
-  .heroTitle {
-    font-size: 80px;
-  }
-  .heroSubtitle {
-    font-size: 40px;
-    white-space: nowrap;
-  }
-}
-@media (max-width: 574px) {
-  .main {
     height: 80vh;
   }
-}
-@media (max-width: 480px) {
-  .main {
-    height: 70vh;
-  }
   .hero {
     margin-top: 10px;
   }
   .heroTitle {
-    font-size: 60px;
+    font-size: 50px;
   }
   .heroSubtitle {
     font-size: 20px;
     white-space: nowrap;
+  }
+}
+@media (min-width: 527px) {
+  .heroTitle {
+    font-size: 70px;
+  }
+  .heroSubtitle {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=main.css.map */
