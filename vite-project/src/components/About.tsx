@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <div className="aboutConatiner">
+      <div className="aboutContainer">
         <h2>WHO I AM</h2>
         <p className="aboutText1">
           I’m currently studying Frontend Development at Medieinstitutet in
