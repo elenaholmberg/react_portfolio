@@ -8,11 +8,14 @@ const About = () => {
             I’m currently studying Frontend Development at Medieinstitutet in
             Malmö, and I’m looking for an internship where I can learn,
             contribute and hopefully make a few things work better than they did
-            yesterday. <br></br> Before coding came along, I ran my own
+            yesterday.</p> 
+
+            <p className="aboutText3"> Before coding came along, I ran my own
             sustainable e-commerce business for several years and worked with
             fashion and visual merchandising. I’ve spent a lot of time thinking
             about how things look, feel and work for people.
           </p>
+          
           <p className="aboutText2">
             I’ve also learned how to turn ideas into reality, solve problems
             when things get messy and stay relatively calm when the plan goes
