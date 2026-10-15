@@ -453,14 +453,6 @@ input {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
 }
 
-body {
-  margin: 0;
-  background-color: lightblue;
-  max-width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 /* navigation */
 .navigation {
   display: flex;
@@ -474,7 +466,7 @@ ul {
   list-style-type: none;
 }
 
-/*language*/
+/* language */
 .languageBtn {
   display: flex;
   justify-content: right;
@@ -547,6 +539,44 @@ p {
   text-transform: uppercase;
 }
 
+body {
+  margin: 0;
+  background-color: lightblue;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  display: flow-root;
+}
+
+/* TEXT STYLES */
+a {
+  text-decoration: none;
+  color: #e8e6dd;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+a,
+h4,
+p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 1288px) {
   .heroTitle {
     font-size: 150px;
