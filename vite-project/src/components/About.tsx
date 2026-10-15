@@ -34,7 +34,7 @@ const About = () => {
           figure it out.
         </p>
 
-        <img src="./no_background.png" alt="Motiv" />
+        <img className="aboutImage" src="./no_background.png" alt="Motiv" />
       </div>
     </>
   );

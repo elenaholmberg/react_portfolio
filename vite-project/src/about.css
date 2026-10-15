@@ -24,7 +24,7 @@
   margin-right: 0;
 }
 
-.aboutConatiner > img {
+.aboutImage {
   position: absolute;
   top: -150px;
   right: 5%;
@@ -111,8 +111,11 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: 527px) {
-  .aboutText1 {
-    grid-column: 1/span 4;
-  }
+.main {
+  width: 100%;
+}
+
+.aboutImage {
+  top: -350px;
+  width: 100%;
 }/*# sourceMappingURL=about.css.map */

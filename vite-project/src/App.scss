@@ -12,15 +12,22 @@ html {
 body {
   margin: 0;
   background-color: lightblue;
-  max-width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
   text-align: center;
+  overflow-x: hidden;
 }
 
-@media (min-width: 1441px) {
-  body {
+@media (max-width: 768px) {
+  html,
+  body,
+  #root,
+  main,
+  section {
     width: 100%;
-    max-width: 1152px;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -61,4 +68,11 @@ p {
   font-style: normal;
   letter-spacing: 0.1em;
   line-height: 1.9em;
+}
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }

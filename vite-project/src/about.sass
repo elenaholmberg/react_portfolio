@@ -25,7 +25,7 @@ $dark: #484747
   margin-left: 0
   margin-right: 0
 
-.aboutConatiner > img
+.aboutImage
   position: absolute
   top: -150px
   right: 5%
@@ -93,7 +93,6 @@ $dark: #484747
     margin-bottom: 40px
 
 
-    //mediaqueries 360px till 768px
 @media (max-width: 768px)
  .about h2
   grid-column: 1 / span 6
@@ -108,11 +107,18 @@ $dark: #484747
   font-size: 10px
   margin-bottom: 10px
 
-@media (min-width: 527px)
-  .aboutText1
-    grid-column: 1 / span 4
 
+     
+
+@media (max-width: 527px) 
+.main
+  width: 100%
   
+.aboutImage
+   top: -350px
+   width: 100%
+
+
 
 
 
