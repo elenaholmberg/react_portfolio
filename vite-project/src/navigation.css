@@ -63,3 +63,23 @@ ul {
   right: 5%;
 }
 
+a {
+  text-decoration: none;
+  color: #e8e6dd;
+  text-transform: uppercase;
+}
+
+/* TEXT STYLES */
+h3 {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+h4 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}/*# sourceMappingURL=navigation.css.map */

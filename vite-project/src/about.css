@@ -9,14 +9,14 @@
   flex-direction: row;
 }
 
-.aboutText {
+.aboutConatiner > span {
   width: 50%;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 50px;
 }
 
-.aboutImage {
+.aboutConatiner > img {
   width: 40%;
 }
 
@@ -27,6 +27,7 @@
   display: flex;
   margin-bottom: 50px;
   margin-left: 5%;
+  color: #484747;
 }
 
 .about h2 {

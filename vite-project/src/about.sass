@@ -1,4 +1,5 @@
 $light: #e8e6dd
+$dark: #484747
 
 .about,
 .myProjects
@@ -9,13 +10,13 @@ $light: #e8e6dd
   display: flex
   flex-direction: row
 
-.aboutText
+.aboutConatiner > span
   width: 50%
   margin-left: 5%
   margin-right: 5%
   margin-bottom: 50px
 
-.aboutImage
+.aboutConatiner > img
   width: 40%
 
 .about h2,
@@ -25,6 +26,7 @@ $light: #e8e6dd
   display: flex
   margin-bottom: 50px
   margin-left: 5%
+  color: $dark
 
 .about h2
   font-family: 'Rubik Mono One', monospace
@@ -32,4 +34,4 @@ $light: #e8e6dd
   font-style: normal
   font-size: 40px
   margin-top: 50px
-  color: #484747
+  color: $dark
