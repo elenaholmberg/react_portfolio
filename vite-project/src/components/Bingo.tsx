@@ -3,7 +3,7 @@ import FloatingCircle from './Traits';
 const Bingo = () => {
   return (
     <div className="bingo">
-      <h3>PERSONAL TRAIT BINGO</h3>
+      <h2>PERSONAL TRAIT BINGO</h2>
       <p>
         Click 4 personal traits you would like your next team member to have
       </p>

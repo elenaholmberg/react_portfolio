@@ -1,11 +1,11 @@
-import Footer from "./Footer";
+import Footer from './Footer';
 
 const Contact = () => {
   return (
     <>
       <div className="contactFlexer">
         <div className="leftContactColumn">
-          <h3>LET'S CHAT</h3>
+          <h2>LET'S CHAT</h2>
           <img src="/Motiv3.png" alt="contact image" />
         </div>
         <form>

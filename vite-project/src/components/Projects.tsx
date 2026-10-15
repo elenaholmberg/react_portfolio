@@ -27,7 +27,7 @@ const Projects = () => {
         onSelectTechnique={setSelectedTechnique}
       />
       <div className="projects">
-        <h3>MY PROJECTS</h3>
+        <h2>MY PROJECTS</h2>
         <p className="projectText">
           Here are some of the projects I have worked on. Each project showcases
           my skills in frontend development and my ability to create responsive

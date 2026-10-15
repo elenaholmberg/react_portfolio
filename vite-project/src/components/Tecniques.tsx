@@ -3,7 +3,16 @@ type TechniquesProps = {
   onSelectTechnique: (technique: string) => void;
 };
 
-const techniques = ['Alla', 'Canva', 'React', 'Node.js', 'Figma', 'TypeScript', 'MySQL', 'JavaScript'];
+const techniques = [
+  'Alla',
+  'Canva',
+  'React',
+  'Node.js',
+  'Figma',
+  'TypeScript',
+  'MySQL',
+  'JavaScript',
+];
 
 const Tecniques = ({
   selectedTechnique,
@@ -11,7 +20,7 @@ const Tecniques = ({
 }: TechniquesProps) => {
   return (
     <div>
-      <h4 className="filterTitle">FILTER AFTER PROJECTS</h4>
+      <p className="filterTitle">FILTER AFTER PROJECTS</p>
       <div className="tecnicalSkills">
         {techniques.map((technique) => (
           <button
