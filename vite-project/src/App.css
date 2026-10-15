@@ -61,11 +61,13 @@
 
 .aboutConatiner > img {
   position: absolute;
-  top: -140px;
+  top: -260px;
   right: 5%;
   width: 40%;
   height: auto;
   z-index: 2;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 140px), transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 140px), transparent 100%);
 }
 
 .about h2,
@@ -593,46 +595,4 @@ p {
   font-style: normal;
   letter-spacing: 0.1em;
   line-height: 1.9em;
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 1288px) {
-  /* MAIN PAGE */
-  .heroTitle {
-    font-size: 150px;
-  }
-  .heroSubtitle {
-    font-size: 100px;
-  }
-}
-@media (max-width: 1024px) {
-  /* MAIN PAGE */
-  .heroTitle {
-    font-size: 110px;
-  }
-  .heroSubtitle {
-    font-size: 75px;
-  }
-}
-@media (max-width: 768px) {
-  /* MAIN PAGE */
-  .main {
-    height: 100vh;
-  }
-  .heroTitle {
-    font-size: 90px;
-  }
-  .heroSubtitle {
-    font-size: 36px;
-  }
-}
-@media (max-width: 480px) {
-  /* MAIN PAGE */
-  .heroTitle {
-    font-size: 70px;
-  }
-  .heroSubtitle {
-    font-size: 30px;
-    white-space: nowrap;
-  }
 }/*# sourceMappingURL=App.css.map */

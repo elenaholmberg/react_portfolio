@@ -17,11 +17,11 @@ const About = () => {
             your own business is a pretty good crash course in all of that.
             <br></br> Now I’m swapping product pages for code, learning React,
             HTML, CSS and JavaScript, and discovering that I enjoy the logical
-            side of things just as much as the creative side. <br></br>I’m curious by
-            nature, quick to learn and not particularly afraid of starting from
-            scratch. Having run my own business, I know you rarely have all the
-            answers before you begin. Sometimes you just have to roll up your
-            sleeves and figure it out.
+            side of things just as much as the creative side. <br></br>I’m
+            curious by nature, quick to learn and not particularly afraid of
+            starting from scratch. Having run my own business, I know you rarely
+            have all the answers before you begin. Sometimes you just have to
+            roll up your sleeves and figure it out.
           </p>
         </span>
 

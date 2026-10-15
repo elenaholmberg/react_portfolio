@@ -2,7 +2,7 @@
   background-color: #484747;
   width: 100%;
   position: relative;
-  height: 90vh;
+  height: clamp(50vh, 90vh, 900px);
 }
 
 .line {
@@ -33,4 +33,50 @@
 
 .hero {
   margin-top: 100px;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    height: 50vh;
+  }
+}
+/* MEDIA QUERIES */
+@media (max-width: 1288px) {
+  .heroTitle {
+    font-size: 150px;
+  }
+  .heroSubtitle {
+    font-size: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .main {
+    height: 70vh;
+  }
+  .heroTitle {
+    font-size: 110px;
+  }
+  .heroSubtitle {
+    font-size: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    height: 70vh;
+  }
+  .heroTitle {
+    font-size: 90px;
+  }
+  .heroSubtitle {
+    font-size: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 70px;
+  }
+  .heroSubtitle {
+    font-size: 30px;
+    white-space: nowrap;
+  }
 }/*# sourceMappingURL=main.css.map */

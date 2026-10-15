@@ -22,9 +22,9 @@ $dark: #484747
 
 .aboutConatiner > img
   position: absolute
-  top: -260px
+  top: -350px
   right: 5%
-  width: 40%
+  width: 50%
   height: auto
   z-index: 2
   -webkit-mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 140px), transparent 100%)
@@ -46,3 +46,14 @@ $dark: #484747
   font-size: 40px
   margin-top: 50px
   color: $dark
+
+
+@media (max-width: 1024px)
+  .aboutConatiner img
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 60px), transparent 100%)
+    mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 60px), transparent 100%)
+    top: -310px
+
+@media (max-width: 768px)
+  .aboutConatiner img
+    top: -350px
