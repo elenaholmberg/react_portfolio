@@ -109,7 +109,8 @@
 .aboutImage {
   position: absolute;
   top: -150px;
-  right: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50%;
   height: auto;
   z-index: 2;
@@ -149,7 +150,7 @@
 .aboutText2,
 .aboutText3,
 .aboutText4 {
-  text-align: left;
+  text-align: justify;
 }
 
 .about h2 {
@@ -198,8 +199,8 @@
 }
 
 .aboutImage {
-  top: -350px;
-  width: 80%;
+  top: -340px;
+  width: 260px;
 }
 
 .traitsBingo {
@@ -664,53 +665,9 @@ h4 {
   text-transform: uppercase;
 }
 
-html {
-  background-color: lightblue;
-  width: 100%;
-}
-
-body {
-  margin: 0;
-  background-color: lightblue;
-  width: 100%;
-  max-width: none;
-  box-sizing: border-box;
-  text-align: center;
-  overflow-x: hidden;
-}
-
-#root,
-main,
-section {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  html,
-  body,
-  #root,
-  main,
-  section {
-    width: 100%;
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
 section {
   margin: 0;
   padding: 0;
-  display: flow-root;
-}
-
-section > :first-child {
-  margin-top: 0;
-}
-
-section > :last-child {
-  margin-bottom: 0;
 }
 
 /* TEXT STYLES */
@@ -735,11 +692,4 @@ p {
   font-style: normal;
   letter-spacing: 0.1em;
   line-height: 1.9em;
-}
-
-@media (max-width: 768px) {
-  .main {
-    max-width: 100%;
-    margin: 0 auto;
-  }
 }/*# sourceMappingURL=App.css.map */

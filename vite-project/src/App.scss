@@ -5,54 +5,11 @@
 @use './contact';
 @use './navigation';
 
-html {
-  background-color: lightblue;
-  width: 100%;
-}
 
-body {
-  margin: 0;
-  background-color: lightblue;
-  width: 100%;
-  max-width: none;
-  box-sizing: border-box;
-  text-align: center;
-  overflow-x: hidden;
-}
-
-#root,
-main,
-section {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  html,
-  body,
-  #root,
-  main,
-  section {
-    width: 100%;
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
 
 section {
   margin: 0;
   padding: 0;
-  display: flow-root;
-}
-
-section > :first-child {
-  margin-top: 0;
-}
-
-section > :last-child {
-  margin-bottom: 0;
 }
 
 /* TEXT STYLES */
@@ -78,11 +35,4 @@ p {
   font-style: normal;
   letter-spacing: 0.1em;
   line-height: 1.9em;
-}
-
-@media (max-width: 768px) {
-  .main {
-    max-width: 100%;
-    margin: 0 auto;
-  }
 }
