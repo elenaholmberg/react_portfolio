@@ -42,6 +42,11 @@
   width: 100%;
 }
 
+.about {
+  position: relative;
+  z-index: 1;
+}
+
 .aboutConatiner {
   display: flex;
   flex-direction: row;
@@ -55,7 +60,12 @@
 }
 
 .aboutConatiner > img {
+  position: absolute;
+  top: -140px;
+  right: 5%;
   width: 40%;
+  height: auto;
+  z-index: 2;
 }
 
 .about h2,
@@ -587,6 +597,7 @@ p {
 
 /* MEDIA QUERIES */
 @media (max-width: 1288px) {
+  /* MAIN PAGE */
   .heroTitle {
     font-size: 150px;
   }
@@ -595,6 +606,7 @@ p {
   }
 }
 @media (max-width: 1024px) {
+  /* MAIN PAGE */
   .heroTitle {
     font-size: 110px;
   }
@@ -603,6 +615,7 @@ p {
   }
 }
 @media (max-width: 768px) {
+  /* MAIN PAGE */
   .main {
     height: 100vh;
   }
@@ -614,6 +627,7 @@ p {
   }
 }
 @media (max-width: 480px) {
+  /* MAIN PAGE */
   .heroTitle {
     font-size: 70px;
   }

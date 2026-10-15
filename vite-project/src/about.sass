@@ -6,6 +6,10 @@ $dark: #484747
   background-color: $light
   width: 100%
 
+.about
+  position: relative
+  z-index: 1
+
 .aboutConatiner
   display: flex
   flex-direction: row
@@ -17,7 +21,14 @@ $dark: #484747
   margin-bottom: 50px
 
 .aboutConatiner > img
+  position: absolute
+  top: -260px
+  right: 5%
   width: 40%
+  height: auto
+  z-index: 2
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 140px), transparent 100%)
+  mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 140px), transparent 100%)
 
 .about h2,
 .about p

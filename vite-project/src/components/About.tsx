@@ -25,7 +25,7 @@ const About = () => {
           </p>
         </span>
 
-        <img src="./Motiv2.png" alt="Motiv" />
+        <img src="./no_background.png" alt="Motiv" />
       </div>
     </>
   );
