@@ -32,7 +32,7 @@ Make sure you have [Node.js](https://nodejs.org/) and npm installed on your comp
    ```bash
    git clone <https://github.com/elenaholmberg/react_portfolio>
    ```
-![alt text](<Skärmavbild 2026-10-16 kl. 18.00.34.jpg>)
+<img width="524" height="1300" alt="Skärmavbild 2026-10-16 kl  18 00 34" src="https://github.com/user-attachments/assets/b91fb881-92f7-4d9f-9abc-ded35fbfb0ca" />
 
 Här är en screenshot av Figman. Det är andra bilder men jag har försökt hålla den någorlunda lik. Jag lyckades rätt bra från början men sen hade jag jäkligt svårt att få till responsiviteten så då blev jag tvungen att förenkla designen en del. 
 Men det får vara ett work in progress med designen. Tror det blir extra klurigt också för jag sitter på en så liten skärm och jobbar.
