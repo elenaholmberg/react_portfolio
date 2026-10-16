@@ -58,7 +58,9 @@
 }
 
 .circleMessage {
-  width: 50%;
+  width: 80%;
+  max-width: 400px;
+  height: 50%;
   box-sizing: border-box;
   position: absolute;
   top: 30%;
@@ -78,11 +80,11 @@
   transform: translate(-50%, -50%);
 }
 
-.circleMessage p {
+.circleMessage .messageText {
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 10px;
   color: #484747;
 }
 
@@ -169,4 +171,7 @@
       transform: translate(0, 0);
     }
   }
+}
+.messageText {
+  text-align: center;
 }/*# sourceMappingURL=bingo.css.map */

@@ -93,7 +93,7 @@ const FloatingCircles = () => {
       ))}
       {selectedCircles.length >= 4 && (
         <div className="circleMessage" role="status">
-          <p>
+          <p className="messageText">
             Great choices! <br></br>You found your perfect match! <br /> Now,
             let's get in touch before someone else does!
           </p>
