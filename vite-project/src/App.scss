@@ -33,7 +33,8 @@ a {
   text-transform: uppercase;
 }
 
-h2 {
+h2,
+.projectLink {
   font-family: 'Rubik Mono One', monospace;
   font-weight: 400;
   font-style: normal;
@@ -49,7 +50,11 @@ h3 {
 
 a,
 h4,
-p {
+p,
+li,
+form,
+button,
+.circle {
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 400;
   font-size: 10px;

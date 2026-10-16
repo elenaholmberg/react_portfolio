@@ -312,6 +312,8 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-flow: row;
   gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .projectVisual {
@@ -326,6 +328,7 @@
   display: flex;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
   overflow: hidden;
   border-radius: 20px;
   background-color: #484747;
@@ -450,6 +453,7 @@
 }
 
 .contactInfo {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #e8e6dd;
@@ -457,9 +461,16 @@
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  padding: 0;
   text-align: left;
   grid-column: 1/-1;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 0px;
+}
+
+.contactInfo ul {
+  margin: 0;
+  padding: 0;
 }
 
 .ulRight,
@@ -683,7 +694,8 @@ a {
   text-transform: uppercase;
 }
 
-h2 {
+h2,
+.projectLink {
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
   font-style: normal;
@@ -699,7 +711,11 @@ h3 {
 
 a,
 h4,
-p {
+p,
+li,
+form,
+button,
+.circle {
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
   font-size: 10px;
