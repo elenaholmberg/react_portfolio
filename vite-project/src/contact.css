@@ -4,7 +4,8 @@
 }
 
 .contactFlexer {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .leftContactColumn {
@@ -12,6 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 50px 0px 0px 0px;
 }
 
 .contact h2 {
@@ -27,8 +29,8 @@
 .contact img {
   position: relative;
   z-index: 2;
-  width: 400px;
-  height: 100%;
+  width: 200px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 0px;
@@ -64,12 +66,10 @@
 }
 
 form {
-  grid-column: 2/-1;
+  grid-column: 1/-1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 20%;
-  margin-right: 5%;
   height: 600px;
 }
 
@@ -103,6 +103,7 @@ input {
   font-weight: 400;
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 50px;
   border-radius: 10px;
   width: 50%;
 }
