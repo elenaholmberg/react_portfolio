@@ -2,7 +2,7 @@ const About = () => {
   return (
     <>
       <div className="aboutContainer">
-        <h2>WHO I AM</h2>
+        <h2 className="aboutTitle">WHO I AM</h2>
         <p className="aboutText1">
           I’m currently studying Frontend Development at Medieinstitutet in
           Malmö, and I’m looking for an internship where I can learn, contribute
