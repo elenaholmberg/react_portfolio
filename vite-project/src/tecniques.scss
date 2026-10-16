@@ -44,3 +44,13 @@ $light: #e8e6dd;
   background: $dark;
   color: $light;
 }
+
+@media (min-width: 768px)
+{
+  .filterTitle {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+}

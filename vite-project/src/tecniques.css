@@ -40,4 +40,13 @@
 .tecnicalSkills button:hover {
   background: #484747;
   color: #e8e6dd;
+}
+
+@media (min-width: 768px) {
+  .filterTitle {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+  }
 }/*# sourceMappingURL=tecniques.css.map */
