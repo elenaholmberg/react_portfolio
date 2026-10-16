@@ -34,19 +34,8 @@
   margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .main {
     height: 100vh;
-  }
-  .aboutImage {
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width: 767px) {
-  .main {
-    height: 80vh;
   }
 }/*# sourceMappingURL=main.css.map */
