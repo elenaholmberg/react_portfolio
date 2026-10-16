@@ -28,11 +28,11 @@ $dark: #484747
   
 
 .aboutImage
+  top: -340px
+  width: 260px
   position: absolute
-  top: -150px
   left: 65%
   transform: translateX(-50%)
-  width: 50%
   height: auto
   z-index: 2
   -webkit-mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 140px), transparent 100%)
@@ -43,19 +43,19 @@ $dark: #484747
   grid-column: 1 / span 3
   grid-row: 2
   margin-bottom: 40px
-  color: $dark
+  
 
 .aboutText2
   grid-column: 1 / span 3
   grid-row: 3
   margin: 0
-  color: $dark
+  
 
 .aboutText3
   grid-column: 1 / span 6
   grid-row: 4
   margin-bottom: 40px
-  color: $dark
+
 
  
 .aboutText4
@@ -70,6 +70,10 @@ $dark: #484747
 .aboutText3,
 .aboutText4
   text-align: justify
+  grid-column: 1 / span 6
+  font-size: 10px
+  margin-bottom: 10px
+  color: $dark
   
 
 
@@ -77,31 +81,18 @@ $dark: #484747
 
 
 
-@media (min-width: 1180px)
-.aboutText2
-  grid-column: 1 / span 6
-  grid-row: 3
-  margin-bottom: 40px
 
-@media (max-width: 768px)
-.aboutText1,
-.aboutText2,
-.aboutText3,
-.aboutText4
-  grid-column: 1 / span 6
-  font-size: 10px
-  margin-bottom: 10px
+
+
+
+ 
 
 
      
 
-@media (max-width: 527px) 
-.main
-  width: 100%
 
-.aboutImage
-   top: -340px
-   width: 260px
+
+
 
 
 

@@ -38,6 +38,12 @@
   .main {
     height: 100vh;
   }
+  .aboutImage {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (max-width: 767px) {
   .main {
