@@ -5,23 +5,22 @@ $light: #e8e6dd
   background-color: $light
   width: 100%
 
+.projects
+  display: grid
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+  grid-auto-flow: row
+  gap: 20px
+  margin-bottom: 50px
+  margin-top: 20px
 
-.projectCard,
-.projectCardRow2
-  height: 300px
-  margin-bottom: 60px
 
 .projectVisual
   position: relative
   height: 300px
   cursor: pointer
   border-radius: 20px
+   
 
-.projectCard img,
-.projectCardRow2 img
-  width: 100%
-  height: 100%
-  object-fit: cover
 
 .projectCardWhite
   position: relative
@@ -34,6 +33,7 @@ $light: #e8e6dd
   align-items: center
   justify-content: center
   text-decoration: none
+   
 
 .projectCardWhiteImage
   position: absolute
@@ -41,6 +41,7 @@ $light: #e8e6dd
   opacity: 0
   object-fit: cover
   transition: opacity 0.2s ease
+  
 
 .projectCardWhite.isHovered
   .projectCardWhiteImage
@@ -71,22 +72,12 @@ $light: #e8e6dd
   display: block
   width: 100%
   height: 100%
-
-.projectCardImage img
-  width: 100%
-  height: 100%
   object-fit: cover
 
-.projects
-  display: grid
-  grid-gap: 20px
-  justify-content: space-evenly
-  margin-left: 5%
-  margin-right: 5%
-  text-align: left
+
 
 .projectText 
-  grid-column: 1 / span 6
+  grid-column: 1 / -1
   grid-row: 2
   margin-bottom: 0
   padding-bottom: 0
@@ -94,7 +85,18 @@ $light: #e8e6dd
 .projects h2
   justify-content: left
   text-align: left
-  grid-column: 1 / span 6
+  grid-column: 1 / -1
   grid-row: 1
   margin-bottom: 0px
   color: $dark
+
+@media (max-width: 767px)
+  .projects
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+   
+    
+
+@media (max-width: 499px)
+  .projects
+    grid-template-columns: 1fr
+   

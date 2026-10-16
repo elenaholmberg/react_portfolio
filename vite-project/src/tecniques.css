@@ -8,14 +8,14 @@
 }
 
 .techniqueFilter {
-  grid-column: 1 / span 6;
+  grid-column: 1/-1;
   grid-row: 3;
   height: 50%;
 }
 
 .tecnicalSkills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
   grid-auto-flow: row;
   gap: 8px;
   margin-bottom: 50px;
@@ -23,6 +23,7 @@
 }
 
 .tecnicalSkills button {
+  gap: 4px;
   width: 80px;
   height: 25px;
   border-radius: 4px;
@@ -33,7 +34,7 @@
   background: transparent;
   color: #484747;
   cursor: pointer;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   text-transform: uppercase;
 }
 
@@ -41,4 +42,4 @@
 .tecnicalSkills button:hover {
   background: #484747;
   color: #e8e6dd;
-} /*# sourceMappingURL=tecniques.css.map */
+}/*# sourceMappingURL=tecniques.css.map */
