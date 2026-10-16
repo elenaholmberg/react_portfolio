@@ -3,7 +3,7 @@
   background-color: #484747;
   width: 100%;
   position: relative;
-  height: clamp(70vh, 60vh, 900px);
+  height: clamp(80vh, 60vh, 900px);
 }
 
 .line {
@@ -22,17 +22,24 @@
   margin-top: 20px;
   margin-bottom: 0;
   padding-left: 20px;
+  margin-top: 0;
 }
-
 .heroSubtitle {
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
   color: #e8e6dd;
-  padding-left: 20px;
+  padding-left: 0px;
+  padding-top: 0;
+  margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .main {
+    height: 100vh;
+  }
+}
 .about {
   background-color: #e8e6dd;
   width: 100%;
@@ -58,7 +65,7 @@
 .aboutImage {
   position: absolute;
   top: -150px;
-  left: 50%;
+  left: 65%;
   transform: translateX(-50%);
   width: 50%;
   height: auto;
@@ -187,7 +194,9 @@
 }
 
 .circleMessage {
-  width: 50%;
+  width: 80%;
+  max-width: 400px;
+  height: 50%;
   box-sizing: border-box;
   position: absolute;
   top: 30%;
@@ -207,11 +216,11 @@
   transform: translate(-50%, -50%);
 }
 
-.circleMessage p {
+.circleMessage .messageText {
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 10px;
   color: #484747;
 }
 
@@ -300,10 +309,7 @@
   }
 }
 .messageText {
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10px;
+  text-align: center;
 }
 
 .myProjects {
@@ -560,7 +566,7 @@ ul {
 
 /* language */
 .languageBtn {
-  display: flex;
+  display: none;
   justify-content: right;
   color: #e8e6dd;
   background-color: #484747;

@@ -14,7 +14,7 @@ ul {
 
 /* language */
 .languageBtn {
-  display: flex;
+  display: none;
   justify-content: right;
   color: #e8e6dd;
   background-color: #484747;
