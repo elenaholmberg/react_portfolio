@@ -6,7 +6,7 @@ const Contact = () => {
           <h2>LET'S CHAT</h2>
           <img src="/Motiv3.png" alt="contact image" />
         </div>
-        <form>
+        <form className="contactForm">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
