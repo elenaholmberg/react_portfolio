@@ -177,6 +177,10 @@
 }
 
 @media (min-width: 768px) {
+  .circleMessage {
+    width: 400px;
+    height: 310px;
+  }
   .bingo p {
     font-size: 15px;
     margin-top: 0px;
