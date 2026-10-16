@@ -22,10 +22,6 @@ const Projects = () => {
 
   return (
     <>
-      <Tecniques
-        selectedTechnique={selectedTechnique}
-        onSelectTechnique={setSelectedTechnique}
-      />
       <div className="projects">
         <h2>MY PROJECTS</h2>
         <p className="projectText">
@@ -33,6 +29,11 @@ const Projects = () => {
           my skills in frontend development and my ability to create responsive
           and user-friendly web applications.
         </p>
+
+        <Tecniques
+          selectedTechnique={selectedTechnique}
+          onSelectTechnique={setSelectedTechnique}
+        />
 
         {filteredProjects.map((project) => (
           <div

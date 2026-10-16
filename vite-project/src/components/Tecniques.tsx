@@ -19,8 +19,8 @@ const Tecniques = ({
   onSelectTechnique,
 }: TechniquesProps) => {
   return (
-    <div>
-      <p className="filterTitle">FILTER AFTER PROJECTS</p>
+    <div className="techniqueFilter">
+      <h2 className="filterTitle">FILTER AFTER PROJECTS</h2>
       <div className="tecnicalSkills">
         {techniques.map((technique) => (
           <button

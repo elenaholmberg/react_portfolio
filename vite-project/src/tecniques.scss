@@ -1,0 +1,48 @@
+$dark: #484747;
+$light: #e8e6dd;
+
+.filterTitle {
+  font-size: 10px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  margin-left: 2%;
+  margin-bottom: 16px;
+}
+
+.techniqueFilter {
+  grid-column: 1 / span 6;
+  grid-row: 3;
+  height: 50%;
+}
+
+.tecnicalSkills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-auto-flow: row;
+  gap: 8px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.tecnicalSkills button {
+gap: 4px;
+  width: 80px;
+  height: 25px;
+  border-radius: 4px;
+  justify-self: center;
+  box-sizing: border-box;
+  padding: 4px;
+  border: 1px solid $dark;
+  background: transparent;
+  color: $dark;
+  cursor: pointer;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform: uppercase;
+}
+
+.tecnicalSkills button.active,
+.tecnicalSkills button:hover {
+  background: $dark;
+  color: $light;
+}
