@@ -53,7 +53,6 @@
   justify-content: left;
   text-align: left;
   display: flex;
-  padding-left: 2%;
 }
 
 .aboutImage {
@@ -304,15 +303,15 @@
 .myProjects {
   background-color: #e8e6dd;
   width: 100%;
+  height: auto;
+  padding-bottom: 100px;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-flow: row;
-  gap: 8px;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
 .projectVisual {
@@ -338,9 +337,11 @@
 .projectCardWhiteImage {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition: opacity 0.2s ease;
 }
 
@@ -373,11 +374,6 @@
 .projectCardImage {
   position: relative;
   display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.projectCardImage img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -416,8 +412,8 @@
 }
 
 .contactFlexer {
-  display: grid;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .leftContactColumn {
@@ -425,13 +421,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 50px 0px 0px 0px;
 }
 
 .contact h2 {
   justify-content: left;
   text-align: left;
   margin-bottom: 50px;
-  margin-left: 5%;
   color: #e8e6dd;
   position: absolute;
   z-index: 3;
@@ -440,8 +436,8 @@
 .contact img {
   position: relative;
   z-index: 2;
-  width: 400px;
-  height: 100%;
+  width: 200px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 0px;
@@ -473,16 +469,13 @@
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  margin-right: 5%;
 }
 
 form {
-  grid-column: 2/-1;
+  grid-column: 1/-1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 20%;
-  margin-right: 5%;
   height: 600px;
 }
 
@@ -516,6 +509,7 @@ input {
   font-weight: 400;
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 50px;
   border-radius: 10px;
   width: 50%;
 }
@@ -624,8 +618,6 @@ h4 {
   display: flex;
   justify-content: left;
   text-align: left;
-  margin-left: 2%;
-  margin-bottom: 16px;
 }
 
 .techniqueFilter {
@@ -663,6 +655,16 @@ h4 {
 .tecnicalSkills button:hover {
   background: #484747;
   color: #e8e6dd;
+}
+
+.main,
+.about,
+.traitsBingo,
+.myProjects,
+.contact {
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* GRIDS */

@@ -6,6 +6,16 @@
 @use './navigation';
 @use './tecniques';
 
+.main,
+.about,
+.traitsBingo,
+.myProjects,
+.contact {
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 /* GRIDS */
 .aboutContainer,
 .bingo,

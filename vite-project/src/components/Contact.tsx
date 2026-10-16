@@ -1,5 +1,3 @@
-import Footer from './Footer';
-
 const Contact = () => {
   return (
     <>
@@ -35,7 +33,6 @@ const Contact = () => {
             Send
           </button>
         </form>
-        <Footer />
       </div>
     </>
   );

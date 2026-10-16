@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Hero from './components/Hero';
 import LanguageBtn from './components/LanguageBtn';
+import Footer from './components/Footer';
 
 function App() {
   const [language, setLanguage] = useState<'en' | 'sv'>('en');
@@ -37,6 +38,7 @@ function App() {
       <section id="contact" className="contact">
         <Contact />
       </section>
+      <Footer />
     </>
   );
 }
