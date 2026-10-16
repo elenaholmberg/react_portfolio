@@ -47,4 +47,18 @@
     font-size: 50px;
     margin-top: 0;
   }
+}
+@media (min-width: 1024px) {
+  .main {
+    height: 120vh;
+  }
+  .main .heroTitle {
+    padding-left: 0px;
+    font-size: 250px;
+    margin-top: 0;
+  }
+  .main .heroSubtitle {
+    font-size: 100px;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
