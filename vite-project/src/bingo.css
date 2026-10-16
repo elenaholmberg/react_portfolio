@@ -174,4 +174,16 @@
 }
 .messageText {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bingo p {
+    font-size: 15px;
+  }
+  .bingo h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+  }
 }/*# sourceMappingURL=bingo.css.map */
