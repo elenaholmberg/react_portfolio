@@ -1,6 +1,6 @@
 @use './main';
 @use './about';
-@use './bingo';
+@use './bingo.scss';
 @use './projects';
 @use './contact';
 @use './navigation.scss';
@@ -67,5 +67,5 @@ button,
   font-style: normal;
   letter-spacing: 0.1em;
   line-height: 1.9em;
-  padding: 1% 2% 2%;
+  
 }

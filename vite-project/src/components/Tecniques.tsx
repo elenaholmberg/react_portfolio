@@ -20,7 +20,7 @@ const Tecniques = ({
 }: TechniquesProps) => {
   return (
     <div className="techniqueFilter">
-      <h2 className="filterTitle">FILTER AFTER PROJECTS</h2>
+      <h2 className="filterTitle">FILTER PROJECTS AFTER TECHNOLOGIES</h2>
       <div className="tecnicalSkills">
         {techniques.map((technique) => (
           <button

@@ -26,8 +26,7 @@ const Projects = () => {
         <h2 className="myProjectsTitle">MY PROJECTS</h2>
         <p className="projectText">
           Here are some of the projects I have worked on. Each project showcases
-          my skills in frontend development and my ability to create responsive
-          and user-friendly web applications.
+          my skills in frontend development and User Experience design.
         </p>
 
         <Tecniques
