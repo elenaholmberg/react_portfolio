@@ -97,6 +97,15 @@ $accent: lightblue;
   text-align: center;
 }
 
+
+.greeting {
+  text-align: left;
+  font-family: 'Rubik Mono One', monospace;
+  font-size: 20px;
+  color: $dark;
+  padding-bottom: 20px;
+}
+
 .circleMessage {
   a {
     display: inline-block;

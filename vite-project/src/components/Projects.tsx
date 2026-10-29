@@ -5,6 +5,7 @@ import { projects } from '../data/projects';
 const Projects = () => {
   const [selectedTechnique, setSelectedTechnique] = useState('Alla');
   const [hoveredProjectId, setHoveredProjectId] = useState<number | null>(null);
+  const [lockedProjectId, setLockedProjectId] = useState<number | null>(null);
 
   const filteredProjects =
     selectedTechnique === 'Alla'
@@ -14,7 +15,10 @@ const Projects = () => {
         );
 
   useEffect(() => {
-    const resetCards = () => setHoveredProjectId(null);
+    const resetCards = () => {
+      setHoveredProjectId(null);
+      setLockedProjectId(null);
+    };
 
     window.addEventListener('pageshow', resetCards);
     return () => window.removeEventListener('pageshow', resetCards);
@@ -26,7 +30,8 @@ const Projects = () => {
         <h2 className="myProjectsTitle">MY PROJECTS</h2>
         <p className="projectText">
           Here are some of the projects I have worked on. Each project showcases
-          my skills in frontend development and User Experience design.
+          my skills in frontend development and my ability to create responsive
+          and user-friendly web applications.
         </p>
 
         <Tecniques
@@ -41,10 +46,17 @@ const Projects = () => {
           >
             <div className="projectVisual">
               <a
-                className={`projectCardWhite ${hoveredProjectId === project.id ? 'isHovered' : ''}`}
+                className={`projectCardWhite ${hoveredProjectId === project.id || lockedProjectId === project.id ? 'isHovered' : ''}`}
                 href={project.url}
+                title={project.name}
                 onMouseEnter={() => setHoveredProjectId(project.id)}
                 onMouseLeave={() => setHoveredProjectId(null)}
+                onClick={(event) => {
+                  if (lockedProjectId !== project.id) {
+                    event.preventDefault();
+                    setLockedProjectId(project.id);
+                  }
+                }}
               >
                 <img
                   src={project.image}
@@ -52,12 +64,11 @@ const Projects = () => {
                   className="projectCardWhiteImage"
                 />
                 <span className="projectLink">
-                  {project.name
-                    .trim()
-                    .split(/\s+/)
-                    .map((word, index) => (
-                      <span key={`${word}-${index}`}>{word}</span>
-                    ))}
+                  <p className="projectName">{project.name}</p>
+                  <p className="projectDescription">
+                    {project.description?.trim()}
+                  </p>
+                  <p className="projectCheckout">{project.checkout}</p>
                 </span>
               </a>
             </div>
