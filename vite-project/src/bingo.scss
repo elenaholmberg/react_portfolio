@@ -81,19 +81,14 @@ $accent: lightblue;
   justify-content: center;
   padding: 24px;
   background: $light;
-  border: 2px solid $accent;
   color: $dark;
-  font-weight: 700;
-  font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   line-height: 2;
   transform: translate(-50%, -50%);
 
   .messageText {
-    font-family: 'Rubik Mono One', monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
     color: $dark;
   }
 }

@@ -1,11 +1,10 @@
 @use './main';
 @use './about';
 @use './bingo.scss';
-@use './projects';
+@use './projects.scss';
 @use './contact';
 @use './navigation.scss';
-@use './tecniques.sass';
-
+@use './tecniques.scss';
 
 $dark: #484747;
 $light: #e8e6dd;
@@ -36,7 +35,6 @@ a {
   text-decoration: none;
   color: $light;
   text-transform: uppercase;
-  
 }
 
 h2,
@@ -67,5 +65,4 @@ button,
   font-style: normal;
   letter-spacing: 0.1em;
   line-height: 1.9em;
-  
 }

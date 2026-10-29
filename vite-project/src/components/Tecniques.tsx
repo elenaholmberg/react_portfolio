@@ -24,7 +24,7 @@ const Tecniques = ({
       <div className="tecnicalSkills">
         {techniques.map((technique) => (
           <button
-            className={selectedTechnique === technique ? 'active' : ''}
+            className={selectedTechnique === technique ? 'onClicked' : ''}
             key={technique}
             type="button"
             onClick={() => onSelectTechnique(technique)}

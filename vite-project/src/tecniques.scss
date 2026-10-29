@@ -1,0 +1,59 @@
+$dark: #484747;
+$light: #e8e6dd;
+$accent: lightblue;
+
+.filterTitle {
+  font-size: 10px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+.techniqueFilter {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  height: 50%;
+}
+
+.tecnicalSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+
+  button {
+    gap: 4px;
+    width: 80px;
+    height: 25px;
+    border-radius: 4px;
+    justify-self: center;
+    box-sizing: border-box;
+    padding: 4px;
+    border: 1px solid $dark;
+    background: transparent;
+    color: $dark;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+
+    &.onClicked {
+      background: $dark;
+      color: $light;
+    }
+
+    &:not(.onClicked):hover {
+      background: $accent;
+      color: $dark;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .filterTitle {
+      font-size: 15px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 10px;
+    }
+  }
+}
