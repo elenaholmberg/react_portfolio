@@ -3,9 +3,12 @@ $light: #e8e6dd;
 $accent: lightblue;
 
 .myProjects {
-  background-color: $light;
-  width: 100%;
-  height: auto;
+  background: linear-gradient(
+    to bottom,
+    $light 0%,
+    $light calc(100% - 260px),
+    $dark 100%
+  );
   padding-bottom: 100px;
 }
 
@@ -14,15 +17,6 @@ $accent: lightblue;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-flow: row;
   gap: 20px;
-
-  h2 {
-    justify-content: left;
-    text-align: left;
-    grid-column: 1 / -1;
-    grid-row: 1;
-    margin-bottom: 0;
-    color: $dark;
-  }
 }
 
 .projectVisual {
@@ -30,6 +24,7 @@ $accent: lightblue;
   height: 300px;
   cursor: pointer;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .projectCardWhite {
@@ -38,49 +33,54 @@ $accent: lightblue;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  overflow: hidden;
   border-radius: 20px;
-  background-color: $dark;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-
-  &.isHovered {
-    .projectCardWhiteImage {
-      opacity: 1;
-    }
-
-    .projectLink {
-      opacity: 0;
-    }
-  }
-
-  a {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Rubik Mono One', monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
+  transition: background-color 0.2s ease;
 }
 
 .projectCardWhiteImage {
+  border-radius: 20px;
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 1;
   object-fit: contain;
   transition: opacity 0.2s ease;
+}
+
+.projectCardWhite.isHovered {
+  .projectCardWhiteImage {
+    opacity: 0;
+  }
+
+  .projectLink {
+    color: $light;
+    opacity: 1;
+  }
+}
+
+.projectCardWhite a,
+.projectCardImage a {
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.projectLink {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  border: 1px solid $dark;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .projectCardImage {
@@ -89,73 +89,101 @@ $accent: lightblue;
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  a {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Rubik Mono One', monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
 }
 
-.projectLink {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Rubik Mono One', monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+.projectName {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  justify-content: left;
+  text-align: left;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  margin-bottom: 0px;
+  color: $dark;
 }
 
 .projectText {
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
-@media (max-width: 767px) {
+.projects p {
+  color: $dark;
+}
+
+.projectDescription {
+  font-size: 12px;
+  color: $dark;
+  text-align: left;
+}
+
+.projectCheckout {
+  font-size: 12px;
+  color: $dark;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 499px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 500px) {
   .projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .projectDescription {
+    font-size: 10px;
+  }
+  .projectCheckout {
+    font-size: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .myProjectsTitle {
     font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 0;
-    padding-left: 10px;
   }
 
-  .projectText {
-    font-size: 15px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-left: 10px;
+  .projectDescription {
+    font-size: 12px;
+  }
+  .projectCheckout {
+    font-size: 12px;
   }
 }
 
-@media (max-width: 499px) {
+@media (min-width: 1024px) {
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .myProjectsTitle {
+    font-size: 40px;
+  }
+
+  .projectText {
+    font-size: 25px;
+  }
+
+  .projectDescription {
+    font-size: 12px;
+  }
+  .projectCheckout {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projectDescription {
+    font-size: 15px;
+  }
+  .projectCheckout {
+    font-size: 15px;
   }
 }
