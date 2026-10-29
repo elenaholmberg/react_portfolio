@@ -3,8 +3,13 @@
 @use './bingo';
 @use './projects';
 @use './contact';
-@use './navigation';
-@use './tecniques';
+@use './navigation.scss';
+@use './tecniques.sass';
+
+
+$dark: #484747;
+$light: #e8e6dd;
+$accent: lightblue;
 
 .main,
 .about,
@@ -29,8 +34,9 @@
 
 a {
   text-decoration: none;
-  color: #e8e6dd;
+  color: $light;
   text-transform: uppercase;
+  
 }
 
 h2,
@@ -63,5 +69,3 @@ button,
   line-height: 1.9em;
   padding: 1% 2% 2%;
 }
-
-
