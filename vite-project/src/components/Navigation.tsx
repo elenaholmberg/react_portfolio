@@ -24,15 +24,15 @@ const Navigation = () => {
         </svg>
       </button>
 
-      <ul className={isOpen ? 'navList open' : 'navList'}>
-        <li>
-          <a href="#about">About</a>
+      <ul  className={isOpen ? 'navList open' : 'navList'}>
+        <li >
+          <a  className="navLink" href="#about">About</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a className="navLink" href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a  className="navLink" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>

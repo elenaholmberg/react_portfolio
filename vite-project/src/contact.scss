@@ -1,0 +1,155 @@
+$dark: #484747;
+$light: #e8e6dd;
+
+.contact {
+  background-color: $dark;
+  width: 100%;
+}
+
+.contactFlexer {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftContactColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0px 0px 0px;
+}
+
+.contact h2 {
+  justify-content: left;
+  text-align: left;
+  margin-bottom: 50px;
+  color: $light;
+  position: absolute;
+  z-index: 3;
+}
+
+.contact img {
+  position: relative;
+  z-index: 2;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  margin-left: 0px;
+  clip-path: inset(0 0 70px 0);
+  -webkit-mask-image:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      black calc(100% - 150px),
+      transparent calc(100% - 70px)
+    ),
+    radial-gradient(ellipse 120px 100px at 100% 100%, transparent 0, black 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      black calc(100% - 150px),
+      transparent calc(100% - 70px)
+    ),
+    radial-gradient(ellipse 120px 100px at 100% 100%, transparent 0, black 100%);
+  mask-composite: intersect;
+}
+
+.contactInfo {
+  width: 100%;
+  background-color: $light;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: left;
+  grid-column: 1 / -1;
+  padding-top: 20px;
+  padding-right: 0px;
+}
+
+.contactInfo ul {
+  margin: 0;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+a {
+  color: $dark;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+}
+
+label {
+  text-align: left;
+  color: $light;
+  margin-bottom: 5px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+input {
+  height: 40px;
+  border-radius: 10px;
+}
+
+.message {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.submitButton {
+  background-color: $light;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .contactFlexer h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+  }
+
+  .contact img {
+    width: 70%;
+    top: 100px;
+  }
+
+  .contactFlexer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .leftContactColumn {
+    width: 40%;
+  }
+
+  form {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    margin-top: 50px;
+  }
+}

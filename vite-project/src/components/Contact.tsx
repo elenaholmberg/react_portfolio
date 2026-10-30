@@ -20,15 +20,7 @@ const Contact = () => {
             name="message"
             required
           ></textarea>
-          <label className="checkboxLabel" htmlFor="subscribe">
-            <input
-              className="checkbox"
-              type="checkbox"
-              id="subscribe"
-              name="subscribe"
-            />
-            check this box to recieve my CV in your inbox
-          </label>
+          
           <button className="submitButton" type="submit">
             Send
           </button>
