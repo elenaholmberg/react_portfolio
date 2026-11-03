@@ -52,7 +52,11 @@ const Projects = () => {
                 onMouseEnter={() => setHoveredProjectId(project.id)}
                 onMouseLeave={() => setHoveredProjectId(null)}
                 onClick={(event) => {
-                  if (lockedProjectId !== project.id) {
+                  const isDesktop = window.matchMedia(
+                    '(min-width: 1024px)',
+                  ).matches;
+
+                  if (!isDesktop && lockedProjectId !== project.id) {
                     event.preventDefault();
                     setLockedProjectId(project.id);
                   }
