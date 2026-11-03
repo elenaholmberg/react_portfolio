@@ -47,18 +47,9 @@ $accent: lightblue;
       color: $dark;
     }
   }
-
-  @media (min-width: 768px) {
-    .filterTitle {
-      font-size: 20px;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-left: 10px;
-    }
-  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .filterTitle {
     font-size: 20px;
   }
