@@ -108,6 +108,7 @@ input {
 }
 
 .submitButton {
+  color: $dark;
   background-color: $light;
   border: none;
   padding: 10px 20px;
@@ -162,11 +163,11 @@ input {
     width: 30%;
   }
 
-.contactInfo ul li {
-  font-size: 15px;
-}
+  .contactInfo ul li {
+    font-size: 15px;
+  }
 
-.contactInfo ul li a {
-  font-size: 15px;
-}
+  .contactInfo ul li a {
+    font-size: 15px;
+  }
 }
