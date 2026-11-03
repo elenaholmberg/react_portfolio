@@ -2,8 +2,8 @@ const Footer = () => {
   return (
     <div className="contactInfo">
       <ul>
-        <li>Phone: +46 70 123 45 67</li>
-        <li>Email: example@example.com</li>
+        <li>Phone: +46702525346</li>
+        <li>Email: elenaholmberg83@hotmail.com</li>
         <li>
           Github:{' '}
           <a

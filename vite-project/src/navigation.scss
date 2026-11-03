@@ -77,3 +77,12 @@ ul {
   font-size: 10px;
   color: $accent;
 }
+
+
+@media (min-width: 768px) {
+
+  .navLink {
+    font-size: 15px;
+    margin-left: 20px;
+  }
+}

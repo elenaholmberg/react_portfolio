@@ -95,9 +95,10 @@ const FloatingCircles = () => {
         <div className="circleMessage" role="status">
           <p className="messageText">
             <span className="greeting">Great choices! </span>
+           
             <br></br>You found your perfect match! <br /> Now, let's get in
-            touch before someone else does!
-          </p>
+            touch before someone else does!</p>
+        
 
           <a
             href="#contact"
