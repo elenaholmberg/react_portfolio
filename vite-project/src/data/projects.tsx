@@ -11,6 +11,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 6,
+    name: 'Mario Questlog',
+    description:
+      'A personal Mario game collection built with React, TypeScript and SCSS. Track your adventures, manage your backlog and keep all your Mushroom Kingdom memories in one place!',
+    checkout: 'CHECK IT OUT ---->>',
+    image: '/mario-framsida.png',
+    url: 'https://games-vert-three.vercel.app/',
+    technologies: ['React', 'TypeScript', 'SCSS'],
+  },
+  {
     id: 8,
     name: 'IKEA Escaperoom',
     description:
