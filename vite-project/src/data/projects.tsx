@@ -18,7 +18,7 @@ export const projects: Project[] = [
     checkout: 'CHECK IT OUT ---->>',
     image: '/mario-framsida.png',
     url: 'https://games-vert-three.vercel.app/',
-    technologies: ['React', 'TypeScript', 'SCSS'],
+    technologies: ['React', 'TypeScript', 'Canva'],
   },
   {
     id: 8,
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     checkout: 'CHECK IT OUT ---->>',
     image: '/ikea-framsida-rundad.png',
     url: 'https://elenaholmberg.github.io/IKEA-escaperoom/',
-    technologies: ['React', 'JavaScript'],
+    technologies: ['JavaScript'],
   },
   {
     id: 9,
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     checkout: 'CHECK IT OUT ---->>',
     image: '/juniper-framsida-rundad.png',
     url: 'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-vector-graphics/',
-    technologies: ['Figma', 'JavaScript'],
+    technologies: ['Figma', 'JavaScript', 'Node.js'],
   },
   {
     id: 10,
@@ -48,7 +48,7 @@ export const projects: Project[] = [
     checkout: 'CHECK IT OUT ---->>',
     image: '/calippo-framsida-rundad.png',
     url: 'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-bleed-trim/',
-    technologies: ['Canva', 'React'],
+    technologies: ['TypeScript', 'Figma', 'Node.js'],
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     checkout: 'CHECK IT OUT ---->>',
     image: '/zara-framsida-rundad.png',
     url: 'https://www.figma.com/design/KFIQf0mL3rUkseyearcPuu/TEAM-The-A-B-Testers?node-id=54620-75&p=f',
-    technologies: ['Figma', 'TypeScript'],
+    technologies: ['Figma'],
     layoutClass: 'projectCardRow2',
   },
   {
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     checkout: 'CHECK IT OUT ---->>',
     image: '/svg-framsida-rundad.png',
     url: 'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-individuell-elenaholmberg/',
-    technologies: ['React', 'TypeScript'],
+    technologies: ['JavaScript', 'Canva'],
   },
   {
     id: 7,
@@ -79,6 +79,6 @@ export const projects: Project[] = [
     checkout: 'CHECK IT OUT ---->>',
     image: '/cink-framsida-rundad.png',
     url: 'https://www.instagram.com/cinkshop/',
-    technologies: ['Node.js', 'MySQL'],
+    technologies: [],
   },
 ];
